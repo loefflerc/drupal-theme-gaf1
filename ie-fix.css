@@ -1,0 +1,11 @@
+
+/*this set of rules fixes common IE problems */
+
+.container-left #left { left: 0;           /* RC fullwidth */ }
+
+.container-right #left { left: 170px;           /* RC fullwidth */ }
+
+#footer {
+	padding:8px 15px;
+	font-size:.9em;
+}

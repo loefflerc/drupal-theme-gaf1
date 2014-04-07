@@ -1,0 +1,680 @@
+
+body {
+	margin: 0;
+	padding: 0 10px;
+	color: #191919;
+	background: url(img/hintergrund_new.jpg) top center repeat-x;
+	background-color: #E9F3DB;
+	font: 73% Arial, Verdana, Geneva, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+h1 { font-size: 1.3em; }
+
+h2 { font-size: 1.2em; }
+
+h3, h4, h5, h6 { font-size: 1.1em; }
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.9em;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:link { color:#7ab61a; }
+
+a:visited { color: #7ab61a; }
+
+a:hover {
+	color:#7ab61a;
+	text-decoration: underline;
+}
+
+h2, h3 {
+	color:#7ab61a;
+}
+
+fieldset { border: 1px solid #ccc; }
+
+pre {
+	background-color: #eee;
+	padding: 0.75em 1.5em;
+	font-size: 12px;
+	border: 1px solid #ddd;
+}
+
+table { /* make <td> sizes relative to body size! */ font-size: 1em; }
+
+img {
+	padding-top: 10px;
+	padding-right: 15px;
+}
+
+.form-item label {
+	font-size: 1em;
+	color: #222;
+}
+
+.item-list .title {
+	font-size: 1em;
+	color: #222;
+}
+
+.links {
+	margin-bottom: 0em;
+	font-size:.95em;
+}
+
+.comment .links { margin-bottom: 0em; }
+
+/*
+** Page layout blocks / IDs
+*/
+#header, #content { width: 100%; }
+
+#header {
+	position:relative;
+	background: url(img/weiterhin_gruen.gif) no-repeat;
+	background-position: right bottom;
+	/* height:116px; */
+	overflow:hidden;
+	background-color: transparent;
+}
+
+#logo {
+	float:left;
+	margin-right: 100px;
+}
+
+#logo img {
+	padding: 0;
+	border: 0;
+	margin:0;
+}
+
+#sub_header {
+	position:relative;
+	height:50px;
+	background:url(img/rechteck.jpg) left top repeat-x;
+	padding:4px 5px;
+	margin: 0 0 15px 0;
+}
+
+#sub_header .content {
+	padding:2px 0 0 0;
+	color:#ccc;
+}
+f
+#sub_header .block a { color:#fff; }
+
+#sub_header .block {
+	color:#fff;
+	margin:0 350px 0 30px;
+	padding:5px 0 0 0;
+}
+
+#sub_header .block-title {
+	display: none;
+	float:left;
+	width:150px;
+	text-align:right;
+	margin:0 20px 30px 0;
+	color:#99CA30;
+	padding:0;
+}
+
+#block-menu-primary-links li {
+	margin-top: -5px;
+}
+
+#block-menu-primary-links ul {
+	margin-left: -43px;
+}
+
+#sub_header li {
+	border:none !important;
+	margin-left:2px;
+	padding:15px 0px; /* set to 0 in IE fix */
+	float:left; /* float is nececcary! for correct tabs*/
+}
+
+#sub_header a {
+	background:#9ACA31;
+	padding:5px;
+	font-size: 15px;
+	font-weight:bold;
+	color:#fff;
+	margin-left:2px; /*to equalize with li margin */
+}
+
+#secondary {
+	padding:0;
+	margin:0;
+	position:absolute;
+	right:20px;
+	top:10px;
+	font-size:12px;
+	color:#0053A0;
+}
+
+#secondary li { padding:0 6px 0 8px; }
+
+#secondary a {
+	padding: 7px 0;
+	margin:0;
+	font-size: 11px;
+	font-weight:normal;
+	color:#344A04;
+}
+
+#secondary a:hover, #secondary a.active {
+	text-decoration:underline;
+	color:#344A04;
+}
+
+#secondary ul.links li { border-left: 1px solid #344A04; }
+
+ul.links li { border-left: 1px solid #ccc; }
+
+ul.links li a { margin-left:2px; }
+
+ul.links li.first { border-left: none !important; }
+
+ul.links li.last { padding-right:0 !important; }
+
+#primary {
+	position:absolute;
+	bottom:0;
+	right:10px;
+}
+
+#primary li {
+	border:none !important;
+	margin-left:2px;
+	padding:15px 0px; /* set to 0 in IE fix */
+	float:left; /* float is nececcary! for correct tabs*/
+}
+
+#primary a {
+	background:#9ACA31;
+	padding:15px;
+	font-size: 15px;
+	font-weight:bold;
+	color:#fff;
+	margin-left:2px; /*to equalize with li margin */
+}
+
+#primary a:hover, #primary a.active {
+	background:#2E2E2E url(img/tab.png) top left repeat-x;
+	text-decoration:none;
+}
+
+ul.links li.first {
+	border: none;
+	padding-left:0 !important;
+}
+
+ul.links li.last { padding-right:0 !important; }
+
+#search {
+	position:absolute;
+	right:10px;
+	top:10px;
+	vertical-align:middle;
+	padding:6px 10px;
+	background:url(img/search.png);
+	z-index:2;
+}
+
+#search label {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:1.3em;
+}
+
+#search .form-text {
+	border: 1px solid #99CA30;
+	font-size: 1.2em;
+	height: 21px;
+	vertical-align: middle;
+	width: 165px;
+	padding: 3px 4px 0 4px;
+	margin:0;
+}
+
+#mission {
+	background-color: #369;
+	padding: 1.5em 2em;
+	color: #fff;
+}
+
+#mission a, #mission a:visited {
+	color: #9cf;
+	font-weight: bold;
+}
+
+.site-name {
+
+	margin: 0;
+	margin-top: 20px;
+	font-size: 3.3em;
+	font-family:Impact, "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.site-name a:link, .site-name a:visited { color: #fff; }
+
+.site-name a:hover { text-decoration: none; }
+
+.site-slogan {
+	font-size: 1em;
+	color: #000;
+	display: block;
+	margin: 0;
+	font-weight: bold;
+	float:left;
+	padding:0 0 20px 23px;
+	
+}
+
+#main {
+	/* padding in px not ex because IE messes up 100% width tables otherwise */
+  padding: 0 15px;
+	text-align:left;
+}
+
+#mission, .node .content, .comment .content { line-height: 1.4; }
+
+#help {
+	font-size: 0.9em;
+	margin-bottom: 1em;
+}
+
+.breadcrumb {
+	margin-bottom: .5em;
+	font-size:.9em;
+	color:#6a6a6a;
+}
+
+.breadcrumb a { color:#6a6a6a; }
+
+.messages {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 0.3em;
+	margin-bottom: 1em;
+}
+
+.error { border-color: red; }
+
+#footer {
+	padding: 15px;
+	font-size: 0.9em !important;
+	text-align:right;
+	vertical-align:bottom;
+	color:#aaa;
+	background:url(img/footer.jpg) top left repeat-x;
+	margin:15px 0 0 0;
+}
+
+#footer a { color:#fff; }
+
+#footer .links { margin-bottom:5px; }
+
+#author_link {
+	text-align:right;
+	padding:.5em 0 0 0;
+}
+
+/*
+** Common declarations for child classes of node, comment, block, box, etc.
+** If you want any of them styled differently for a specific parent, add
+** additional rules /with only the differing properties!/ to .parent .class.
+** See .comment .title for an example.
+*/
+.title, .title a {
+	font-family: Arial, Verdana, sans serife;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: #7ab61a;
+	margin: 0 auto 0 auto;  /* decrease default margins for h<x>.title */
+}
+
+.feed-item-title a { color:#000; }
+
+.block { margin-bottom:1.5em; }
+
+#center .date {
+	font-size:.8em;
+	color:#3a3a3a;
+}
+
+.submitted {
+	color: #333;
+	font-size: 0.8em;
+}
+
+.links li.first { padding-left:0; }
+
+.links a {
+	font-weight: normal;
+	color:#000;
+}
+
+.block, .box { padding: 0; }
+
+.block .title { margin-bottom: .25em; }
+
+.box .title { font-size: 1.1em; }
+
+.node .title { font-size: 1.1em; }
+
+.node { margin: .5em 0 1em 0; }
+
+#center .node { padding-bottom:1.5em; }
+
+.sticky {
+	padding-bottom:1em;
+	border-bottom:1px dotted #E0E4E7;
+}
+
+.node .content, .comment .content { margin: .5em 0 .5em 0; }
+
+.node .taxonomy {
+	color: #333;
+	font-size: 0.8em;
+	padding: 1.5em;
+}
+
+.node .picture {
+	border: 1px solid #ddd;
+	float: right;
+	margin: 0.5em;
+}
+
+.comment {
+	border: 1px solid #abc;
+	padding: .5em;
+	margin-bottom: 1em;
+}
+
+.comment .title a {
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+.comment .new {
+	text-align: right;
+	font-weight: bold;
+	font-size: 0.8em;
+	float: right;
+	color: red;
+}
+
+.comment .picture {
+	border: 1px solid #abc;
+	float: right;
+	margin: 0.5em;
+}
+
+/*
+** Module specific styles
+*/
+#aggregator .feed-source {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 1em;
+	margin: 1em 0 1em 0;
+}
+
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age {
+	color: #999;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+#aggregator .title {
+	margin-bottom: 0.5em;
+	font-size: 1em;
+}
+
+#aggregator h3 { margin-top: 1em; }
+
+#forum table { width: 100%; }
+
+#forum td { padding: 0.5em 0.5em 0.5em 0.5em; }
+
+#forum td.forum, #forum td.posts { background-color: #eee; }
+
+#forum td.topics, #forum td.last-reply { background-color: #ddd; }
+
+#forum td.container { background-color: #ccc; }
+
+#forum td.container a { color: #555; }
+
+#forum td.statistics, #forum td.settings, #forum td.pager {
+	height: 1.5em;
+	border: 1px solid #bbb;
+}
+
+#forum td .name { color: #96c; }
+
+#forum td .links {
+	padding-top: 0.7em;
+	font-size: 0.9em;
+}
+
+#profile .profile {
+	clear: both;
+	border: 1px solid #abc;
+	padding: .5em;
+	margin: 1em 0em 1em 0em;
+}
+
+#profile .profile .name { padding-bottom: 0.5em; }
+
+.block-forum h3 { margin-bottom: .5em; }
+
+.calendar a { text-decoration: none; }
+
+.calendar td, .calendar th {
+	padding: 0.4em 0;
+	border-color: #888;
+}
+
+.calendar .day-today { background-color: #69c; }
+
+.calendar .day-today a { color: #fff; }
+
+.calendar .day-selected {
+	background-color: #369;
+	color: #fff;
+}
+
+.calendar .header-week { background-color: #ccc; }
+
+.calendar .day-blank { background-color: #ccc; }
+
+.calendar .row-week td a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+/*----------block stuf ----------*/
+
+#left .block-title {
+	padding:7px 0 3px 10px;
+	color:#99CA30;
+	margin: 0;
+	height:26px; /* necessary for IE!!!!!!! */
+	background:url(img/block-header.png) top left no-repeat;
+}
+
+/* ------------------- blockl-user-login ----------------- */
+#blockl-user-login .item-list {
+	margin-top:10px;
+	text-align:left;
+	padding:4px 0 0 0;
+}
+
+#blockl-user-login .item-list ul li { list-style-type:none; }
+
+.user_profile label { font-weight:bold; }
+
+.user_profile .fields { margin:1.4em 0; }
+
+/* sidebar menu
+--------------------------------------------------*/
+
+#right li.collapsed, #right li.leaf {
+	padding:0;
+	line-height:1.8em;
+}
+
+#right .collapsed a, #right .leaf a {
+	display:block;
+	padding:4px;
+	height:1%; /* IE WIN */
+	text-decoration:none;
+	border-bottom:1px dotted #E0E4E7;
+	color:#000;
+}
+
+*html #right .collapsed a, #right .leaf a { border-bottom:1px solid; }
+
+#right .collapsed a:hover, #right .leaf a:hover {
+	background-color:#98ABB8;
+	color:#fff;
+	text-decoration:none;
+}
+
+/* -------------- table view ------------------------- */
+table {
+	width:100%;
+	margin-bottom:15px;
+}
+
+thead th {
+	background:#A7D34B;
+	border:1px solid #88B52D;
+	padding:11px 5px;
+}
+
+tr.odd td, tr.even td {
+	padding:8px 5px;
+	border:1px solid #88B52D;
+}
+
+tr.odd td { background:#F3FAE4; }
+
+tr.even td { background:#E0EFC0; }
+
+tr.odd td.active { background:#E6F2CE; }
+
+tr.even td.active { background:#D1E8A4; }
+
+tr.odd td a, tr.odd td { color:#6A8C22; }
+
+tr.even td a, tr.even td, thead th a { color:#344A04 !important; }
+
+.pager { margin-bottom:15px; }
+
+/* sidebar menu
+--------------------------------------------------*/
+
+#left li.collapsed, #left li.leaf {
+	padding:0;
+	line-height:1.8em;
+}
+
+#left .collapsed a, #left .leaf a {
+	display:block;
+	padding:4px;
+	height:1%; /* IE WIN */
+	text-decoration:none;
+	border-bottom:1px solid #E0E4E7;
+}
+
+#left .collapsed a:hover, #left .leaf a:hover {
+	background-color:#9ACA31;
+	color:#fff;
+	text-decoration:none;
+}
+
+/* -------------------- laout. Holy Grail layout technique is used. Do not forget to fix IE ------------------- */
+
+#wrapper {
+	width:810px;
+	padding:0;
+	margin: 4px auto;
+	text-align:left;
+/*	background: url(img/body_bg.png) top center repeat-y;*/
+}
+
+#bodywrapper {
+	background: url(img/body_bg.png) top center repeat-y;
+	/*padding: 4px;*/
+}
+
+#container { margin-top:5px; }
+
+.container { padding:0; }
+
+.container-left { padding-left: 200px;   /* LC fullwidth */ }
+
+.container-right { padding-right: 170px;  /* RC fullwidth  */ }
+
+#container .column {
+	position: relative;
+	float: left;
+}
+
+#center {
+	padding:0;
+	width: 100%;
+/*	overflow:hidden;*/
+}
+
+#left {
+	width: 160px;				/* LC width */
+	padding: 0 20px 0 0;		/* LC padding */
+	margin-left: -100%;
+	overflow:hidden;
+}
+
+#container > #left { /* hide from f***king IE6! */ right: 200px;          /* LC fullwidth + CC padding */ }
+
+#right {
+	width: 150px;				/* RC width */
+	padding: 0 20px 0 0;		/* RC padding */
+	margin-right: -170px;		/* RC fullwidth + CC padding + 1 px for border*/
+	overflow:hidden; /* this thing helps to get rid of layout breakdown if content is wider, than 100% */
+}
+
+#footer { clear: both; }
+
+/* ga-freiburg */
+
+.wysiwyg-break {
+  border: 0;
+  margin-top: 0em;
+  width: 600px;
+  height: 20px;
+  background: #999;
+}
+
+.item-list ul li {
+  list-style: none;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+#block-menu-primary-links ul li {
+  list-style: none;
+}

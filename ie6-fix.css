@@ -1,0 +1,8 @@
+/*this set of rules fixes IE 6 problems */
+body { text-align:center; /* for IE to center container*/ }
+
+#left { margin-left: -810px; }
+
+#logo { margin-left:15px; /*fixes IE left-double margin */ }
+
+
